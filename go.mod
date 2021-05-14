@@ -1,4 +1,4 @@
-module github.com/WisdomFusion/go-encode
+module github.com/wisdomfusion/go-encode
 
 go 1.12
 
