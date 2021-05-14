@@ -8,7 +8,7 @@ import (
 	"golang.org/x/text/encoding"
 )
 
-func Find(r io.Reader) (e encoding.Encoding, name string, certain bool, err error) {
+func FindEncoding(r io.Reader) (e encoding.Encoding, name string, certain bool, err error) {
 	bytes, err := bufio.NewReader(r).Peek(1024)
 	if err != nil {
 		return

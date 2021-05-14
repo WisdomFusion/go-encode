@@ -20,7 +20,7 @@ func TestFind(t *testing.T) {
 		return
 	}
 
-	_, name, _, err := Find(resp.Body)
+	_, name, _, err := FindEncoding(resp.Body)
 	if err != nil {
 		t.Errorf("Exception ocurred: %s", err.Error())
 	}
